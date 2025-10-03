@@ -17,7 +17,7 @@
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="pareja_id1" class="form-label">Pareja 1</label>
-                <select name="pareja_id1" class="form-control">
+                <select name="pareja_id1" id="pareja_id1" class="form-control">
                     @foreach ($parejas as $pareja)
                         <option value="{{ $pareja->pareja_id }}">
                             {{ $pareja->jugador1 }} - {{ $pareja->jugador2 }}
@@ -30,7 +30,7 @@
 
             <div class="col-md-6 mb-3">
                 <label for="pareja_id2" class="form-label">Pareja 2</label>
-                <select name="pareja_id1" class="form-control">
+                <select name="pareja_id2" id="pareja_id2" class="form-control">
                     @foreach ($parejas as $pareja)
                         <option value="{{ $pareja->pareja_id }}">
                             {{ $pareja->jugador1 }} - {{ $pareja->jugador2 }}
